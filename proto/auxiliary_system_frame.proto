@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyAuxiliarySystemInfo; //辅助系统信息
 
-message AuxiliarySystemMenu
+message AuxiliarySystemMenu //辅助信息
 {
 	required float oil_pump_dcac_w_output_current = 1;      //油泵DC/AC W相输出电流, 0 A
 	required float oil_pump_dcac_v_output_current = 2;      //油泵DC/AC V相输出电流, 0 A

@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyWarningInfo; //警告信息
 
-message WarningFrame
+message WarningFrame //警告提示
 {
         optional string warning_01 = 1;       //水位低报警
         optional string warning_02 = 2;       //左气压低报警

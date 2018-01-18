@@ -22,4 +22,6 @@ message GeneralFrame //基本信息
 	required int32  urea_level = 16;                    //尿素液位
 	required uint32 fault_level = 17;                   //故障等级
 	required int32  fault_code = 18;                    //故障代码
+        required uint32 oil_level = 19;                     //油量百分比
+        required float engine_oil_pressure = 20;            //发动机机油压力
 }
