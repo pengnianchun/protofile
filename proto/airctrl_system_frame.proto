@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyAirCtrlSystemInfo; //空调系统信息
 
-message AirCtrlSystemMenu
+message AirCtrlSystemMenu //空调信息
 {
 	required uint32 ac_fault_code = 1;      //空调故障代码, 00000000（2进制显示）
 	required uint32 ac_fan_status = 2;	//空调风机状态, 00000000（2进制显示）

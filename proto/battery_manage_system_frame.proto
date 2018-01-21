@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyBatteryManageSystemInfo; //电池管理系统信息
 
-message BatteryManageSystemMenu
+message BatteryManageSystemMenu //电池管理信息
 {
     required float  bat_max_charge_current = 1;		//最大允许充电电流,, 0.0 A
     required float  bat_max_discharge_current = 2;	//最大允许放电电流,, 0.0 A

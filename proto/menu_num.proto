@@ -2,9 +2,9 @@ syntax = "proto2";
 
 package fyMenuIdRequestInfo; //请求菜单信息
 
-message MenuIdRequest
+message MenuIdRequest //菜单信息
 {
-	required MenuType menu_number = 1;
+	required MenuType menu_number = 1; //请求菜单号
 	enum MenuType //枚举消息类型
     	{
 	    MENU_UNKNOWN = 0;		
@@ -19,5 +19,5 @@ message MenuIdRequest
 	    MENU_TIMESET = 9;		   //09，时间系统信息界面
 	    MENU_NO_MAX = 10;	           //10，
     	}   
-	optional int32 page_number = 2 [default = 0];
+	optional int32 page_number = 2 [default = 0]; //请求页面号
 }

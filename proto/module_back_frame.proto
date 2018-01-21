@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyModuleBackInfo; //后模块信息
 
-message ModuleBackFrame
+message ModuleBackFrame //后模块
 {
 	required float output_current_01 = 1;     //制动灯
 	required float output_current_02 = 2;     //备用

@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyModuleMiddleInfo; //中模块信息
 
-message ModuleMiddleFrame
+message ModuleMiddleFrame //中模块
 {
 	required float output_current_01 = 1;    //广告灯箱
 	required float output_current_02 = 2;    //右转向灯

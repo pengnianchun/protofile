@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyTcuSystemInfo; //TCU系统信息
 
-message TcuSystemMenu
+message TcuSystemMenu //TCU信息
 {
 	required int32  actual_clutch_position = 1;		//离合实际位置, 0
     	required uint32 tcu_fault_code = 2;			//TCU故障信息, 00000000（2进制显示）

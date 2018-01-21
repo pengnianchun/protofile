@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyModuleFrontInfo; //前模块信息
 
-message ModuleFrontFrame
+message ModuleFrontFrame //前模块
 {
 	required float output_current_01 = 1;  //雨刮快档电机
 	required float output_current_02 = 2;  //雨刮慢档电机
