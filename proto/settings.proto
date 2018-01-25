@@ -12,6 +12,10 @@ message AnimationFlash //开机动画
 	required int32 auto_flash = 1;        // 开机动画通知
 }
 
+message WakeupSignal //唤醒
+{
+        required int32 wakeup_signal = 1;     //唤醒信号
+}
 message MilesClearSettings //里程清零
 {
 	required bool trip_miles_clear = 1;   // 清零小计里程
@@ -29,5 +33,9 @@ message UpgradeSettings //升级
 	    UPDATED_SUCCESS = 4;    // send to mcu, update successfully, msg: NULL
 	    UPDATED_FAILED = 5;     // send to mcu, update fail, msg: fail reason, success as "udisk remove".
 	} 
+}
+message ShutDownSettings	//关机
+{
+        required int32 shut_down = 1;            //关机信号
 }
 

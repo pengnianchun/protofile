@@ -17,7 +17,7 @@ message MenuIdRequest //菜单信息
 	    MENU_AIRCONTROLSYSTEM = 7;	   //07，空调系统信息界面
 	    MENU_TESTMODULESYSTEM = 8;     //08，仪表系统信息界面
 	    MENU_TIMESET = 9;		   //09，时间系统信息界面
-	    MENU_NO_MAX = 10;	           //10，
+	    MENU_NO_MAX = 10;	           
     	}   
 	optional int32 page_number = 2 [default = 0]; //请求页面号
 }
