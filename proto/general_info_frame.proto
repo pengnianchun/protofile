@@ -24,4 +24,5 @@ message GeneralFrame //基本信息
 	optional int32  fault_code = 18;                    //故障代码
         optional uint32 oil_level = 19;                     //油量百分比
         optional float engine_oil_pressure = 20;            //发动机机油压力
+	optional int32 wakeup_signal = 21;		    //控制信号
 }

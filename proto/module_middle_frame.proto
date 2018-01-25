@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package fyModuleMiddleInfo; //中模块信息
 
-message ModuleMiddleOutputFrame   //中模块输出电流
+message ModuleMiddleElectricFrame   //中模块电流
 {
         required float output_current_01 = 1;    //中模块引脚1
         required float output_current_02 = 2;    //中模块引脚2
@@ -22,51 +22,51 @@ message ModuleMiddleOutputFrame   //中模块输出电流
         required float output_current_14 = 14;   //中模块引脚14
         required float output_current_15 = 15;   //中模块引脚15
 }
-message ModuleMiddleInputFrame  //中模块输入控制
+message ModuleMiddleControlFrame  //中模块控制
 {
-        required bool  switch_01 = 16;           //中模块引脚1
-        required bool  switch_02 = 17;           //中模块引脚2
-        required bool  switch_03 = 18;           //中模块引脚3
-        required bool  switch_04 = 19;           //中模块引脚4
-        required bool  switch_05 = 20;           //中模块引脚5
-        required bool  switch_06 = 21;           //中模块引脚6
-        required bool  switch_07 = 22; 		 //中模块引脚7
-        required bool  switch_08 = 23;           //中模块引脚8
-        required bool  switch_09 = 24;           //中模块引脚9
-        required bool  switch_10 = 25;           //中模块引脚10
-        required bool  switch_11 = 26;           //中模块引脚11
-        required bool  switch_12 = 27;           //中模块引脚12
-        required bool  switch_13 = 28;           //中模块引脚13
-        required bool  switch_14 = 29;           //中模块引脚14
-        required bool  switch_15 = 30;           //中模块引脚15
-        required bool  switch_16 = 31;           //中模块引脚16
+        required bool  switch_01 = 1;           //中模块引脚1
+        required bool  switch_02 = 2;           //中模块引脚2
+        required bool  switch_03 = 3;           //中模块引脚3
+        required bool  switch_04 = 4;           //中模块引脚4
+        required bool  switch_05 = 5;           //中模块引脚5
+        required bool  switch_06 = 6;           //中模块引脚6
+        required bool  switch_07 = 7; 		 //中模块引脚7
+        required bool  switch_08 = 8;           //中模块引脚8
+        required bool  switch_09 = 9;           //中模块引脚9
+        required bool  switch_10 = 10;           //中模块引脚10
+        required bool  switch_11 = 11;           //中模块引脚11
+        required bool  switch_12 = 12;           //中模块引脚12
+        required bool  switch_13 = 13;           //中模块引脚13
+        required bool  switch_14 = 14;           //中模块引脚14
+        required bool  switch_15 = 15;           //中模块引脚15
+        required bool  switch_16 = 16;           //中模块引脚16
 
-        required bool  switch_17 = 32;           //中模块引脚17
-        required bool  switch_18 = 33;           //中模块引脚18
-        required bool  switch_19 = 34;           //中模块引脚19
-        required bool  switch_20 = 35;           //中模块引脚20
-        required bool  switch_21 = 36;           //中模块引脚21
-        required bool  switch_22 = 37;           //中模块引脚22
-        required bool  switch_23 = 38;           //中模块引脚23
-        required bool  switch_24 = 39;           //中模块引脚24
-        required bool  switch_25 = 40;           //中模块引脚25
-        required bool  switch_26 = 41;           //中模块引脚26
-        required bool  switch_27 = 42;           //中模块引脚27
-        required bool  switch_28 = 43;           //中模块引脚28
-        required bool  switch_29 = 44;           //中模块引脚29
-        required bool  switch_30 = 45;           //中模块引脚30
-        required bool  switch_31 = 46;           //中模块引脚31
-        required bool  switch_32 = 47;           //中模块引脚32
+        required bool  switch_17 = 17;           //中模块引脚17
+        required bool  switch_18 = 18;           //中模块引脚18
+        required bool  switch_19 = 19;           //中模块引脚19
+        required bool  switch_20 = 20;           //中模块引脚20
+        required bool  switch_21 = 21;           //中模块引脚21
+        required bool  switch_22 = 22;           //中模块引脚22
+        required bool  switch_23 = 23;           //中模块引脚23
+        required bool  switch_24 = 24;           //中模块引脚24
+        required bool  switch_25 = 25;           //中模块引脚25
+        required bool  switch_26 = 26;           //中模块引脚26
+        required bool  switch_27 = 27;           //中模块引脚27
+        required bool  switch_28 = 28;           //中模块引脚28
+        required bool  switch_29 = 29;           //中模块引脚29
+        required bool  switch_30 = 30;           //中模块引脚30
+        required bool  switch_31 = 31;           //中模块引脚31
+        required bool  switch_32 = 32;           //中模块引脚32
 
-        required bool  switch_33 = 48;           //中模块引脚33
-        required bool  switch_34 = 49;           //中模块引脚34
-        required bool  switch_35 = 50;           //中模块引脚35
-        required bool  switch_36 = 51;           //中模块引脚36
-        required bool  switch_37 = 52;           //中模块引脚37
-        required bool  switch_38 = 53;           //中模块引脚38
-        required bool  switch_39 = 54;           //中模块引脚39
-        required bool  switch_40 = 55;           //中模块引脚40
-        required bool  switch_41 = 56;           //中模块引脚41
-        required bool  switch_42 = 57;           //中模块引脚42
+        required bool  switch_33 = 33;           //中模块引脚33
+        required bool  switch_34 = 34;           //中模块引脚34
+        required bool  switch_35 = 35;           //中模块引脚35
+        required bool  switch_36 = 36;           //中模块引脚36
+        required bool  switch_37 = 37;           //中模块引脚37
+        required bool  switch_38 = 38;           //中模块引脚38
+        required bool  switch_39 = 39;           //中模块引脚39
+        required bool  switch_40 = 40;           //中模块引脚40
+        required bool  switch_41 = 41;           //中模块引脚41
+        required bool  switch_42 = 42;           //中模块引脚42
 }
 

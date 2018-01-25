@@ -46,7 +46,6 @@ message InstrumentFrame               //仪表开关量信息
         required bool  input_ctrl_34 = 34;        //第34路开关量
         required bool  input_ctrl_35 = 35;        //第35路开关量
 }
-}
 
 message PictureLampFrame    //符号片显示
 {
