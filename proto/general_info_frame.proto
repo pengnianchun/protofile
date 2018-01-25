@@ -2,27 +2,40 @@ syntax = "proto2";
 
 package fyGeneralInfo;   //通用信息
 
+message KeyFrame //按键操作
+{
+	required bool key1 = 1;      // 确定
+	required bool key2 = 2;      // 返回
+	required bool key3 = 3;      // 前一页
+	required bool key4 = 4;      // 后一页
+}
 message GeneralFrame //基本信息
+{
+	optional int32  battery = 1;                       //蓄电池电压
+	optional uint32 odo = 2;                            //总里程
+	optional float  trip = 3;                           //小计里程
+	optional uint32 date_time = 4;        		   // 系统时间
+	optional float  speed = 5;                          //车速
+	optional float  rpm = 6;                            //转速
+	optional int32  gear = 7;                           //档位
+	optional int32  control_signal = 8;		    //控制信号 1: igOn 2: 报警 3: igOff
+
+}
+
+message CustomFrame //扩展信息
 {
 	optional float  total_voltage = 1;                  //总电压
 	optional float  total_current = 2;                  //总电流
-	optional float  rpm = 3;                            //转速
-	optional float  speed = 4;                          //车速
-	optional int32  gear = 5;                           //档位
-	optional uint32 odo = 6;                            //总里程
-	optional float  trip = 7;                           //小计里程
-	optional float  soc = 8;                            //剩余电量
-	optional float  air_press1 = 9;                     //气压1
-	optional float  air_press2 = 10;                    //气压2
-	optional int32  moter_control_temperature = 11;     //电机控制器温度
-	optional int32  moter_temperature = 12;             //电机温度
-	optional int32  battery = 13;                       //蓄电池电压
-	optional int32  spn = 14;                           //SPN值
-	optional int32  engine_water_temp = 15;             //发动机水温
-	optional int32  urea_level = 16;                    //尿素液位
-	optional uint32 fault_level = 17;                   //故障等级
-	optional int32  fault_code = 18;                    //故障代码
-        optional uint32 oil_level = 19;                     //油量百分比
-        optional float engine_oil_pressure = 20;            //发动机机油压力
-	optional int32 wakeup_signal = 21;		    //控制信号
+	optional float  soc = 3;                            //剩余电量SOC
+	optional float  air_press1 = 4;                     //气压1
+	optional float  air_press2 = 5;                    //气压2
+	optional int32  moter_control_temperature = 6;     //电机控制器温度
+	optional int32  moter_temperature = 7;             //电机温度
+	optional int32  engine_water_temp = 8;             //发动机水温
+	optional uint32 fault_level = 9;                   //故障等级
+	optional int32  fault_code = 10;                    //故障代码
+	optional int32  spn = 11;                           //SPN值
+	optional int32  urea_level = 12;                    //尿素液位
+        optional uint32 oil_level = 13;                     //油量百分比
+        optional float engine_oil_pressure = 14;            //发动机机油压力
 }
