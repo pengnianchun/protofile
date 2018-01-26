@@ -18,10 +18,14 @@ message GeneralFrame //基本信息
 	optional float  speed = 5;                          //车速
 	optional float  rpm = 6;                            //转速
 	optional int32  gear = 7;                           //档位
-	optional int32  control_signal = 8;		    //控制信号 1: igOn 2: 报警 3: igOff
+	
 
 }
 
+message ControlFrame //控制信息
+{
+	optional int32  control_signal = 1;		    //控制信号 1: igOn 2: 报警 3: igOff
+}
 message CustomFrame //扩展信息
 {
 	optional float  total_voltage = 1;                  //总电压
