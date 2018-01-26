@@ -18,7 +18,7 @@ message MilesClearSettings //里程清零
 
 message UpgradeSettings //升级
 {
-	required MsgType msg_id = 1;          // 消息类型
+	required int32 msg_id = 1;          // 消息类型
 	optional string msg_content = 2;      // 消息内容
 	enum MsgType{                         // 类型枚举
 	    NORMAL_STATE = 0;

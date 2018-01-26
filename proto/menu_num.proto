@@ -4,7 +4,7 @@ package fyMenuIdRequestInfo; //请求菜单信息
 
 message MenuIdRequest //菜单信息
 {
-	required MenuType menu_number = 1; //请求菜单号
+	required int32 menu_number = 1; //请求菜单号
 	enum MenuType //枚举消息类型
     	{
 	    MENU_UNKNOWN = 0;		
