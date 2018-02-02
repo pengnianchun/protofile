@@ -19,4 +19,29 @@ message ControlSystemMenu //控制信息
 	optional uint32 dout1 = 13;			//数字量输出1, 00000000（2进制显示）
 	optional uint32 dout2 = 14;			//数字量输出2, 00000000（2进制显示）
 	optional uint32 dout3 = 15;			//数字量输出3, 00000000（2进制显示）
+
+
+	optional int32 drive_system_status = 16;	//驱动系统状态
+	optional int32 drive_motor_status = 17;		//驱动电机状态
+	optional int32 mechanical_brake_status = 18;	//机械制动状态
+	optional bool key_acc = 19;			//钥匙ACC档
+	optional bool key_on = 20;			//钥匙ON档
+	optional bool high_voltage_interlock = 21;	//高压互锁状态
+	optional bool high_voltage_power_up = 22;	//高压上电状态
+	optional bool air_compressor_work = 23;		//空压机工作状态
+	optional bool booster_pump_work = 24;		//助力泵工作状态
+	optional int32 air_compressor_motor_speed = 25;	//空压机电机转速，0 rpm
+	optional int32 steering_assist_motor_speed = 26;//转向助力电机转速，0 rpm
+	optional int32 steering_assist_motor_temp = 27;	//转向助力电机温度，0 ℃
+	optional int32 air_compressor_motor_temp = 28;	//空压机电机温度，0 ℃
+	optional int32 air_compressor_control_temp = 29;//空压控制器温度，0 ℃
+	optional int32 steering_assist_control_temp = 30;//转向控制器温度，0 ℃
+	optional float air_press3 = 31;			//气压3，0.00 Mpa
+	optional float air_press4 = 32;			//气压4，0.00 Mpa
+	optional float air_press5 = 33;			//气压5，0.00 Mpa
+	optional int32 highest_alarm_grade = 34;	//最高报警等级
+	optional int32 fault_alarm_situation = 35;	//故障报警形式
+	optional int32 drive_gears_mode = 36;		//档位驱动模式
+	optional int32 bdu_switch = 37;			//BDU箱内主回路继电器上下电命令
+
 }

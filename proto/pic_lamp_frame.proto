@@ -59,5 +59,6 @@ message PicLampFrame    //小图片显示
         optional bool  lamp_motor_out_of_service = 42;       //24V发电机未工作
         optional bool  lamp_moter_fire_igon = 43;            //发电机点火指示
         optional bool  lamp_after_treat = 44;                 //后处理故障
+	optional bool  lamp_warning_led = 45;			//危险报警
 
 }

@@ -42,4 +42,10 @@ message CustomFrame //扩展信息
 	optional int32  urea_level = 12;                    //尿素液位
         optional uint32 oil_level = 13;                     //油量百分比
         optional float engine_oil_pressure = 14;            //发动机机油压力
+
+	optional float  alone_battery_low_voltage = 15;	    	//单体电池最低电压
+	optional float  alone_battery_high_voltage = 16;    	//单体电池最高电压
+	optional int32  battery_high_temperature = 17;		//电池最高温度
+	optional int32	battery_low_temperature = 18;		//电池最低温度
+	optional int32	battery_pack_energy = 19;		//电池组当前电量
 }
