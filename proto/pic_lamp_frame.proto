@@ -17,10 +17,8 @@ message PicLampFrame    //小图片显示
         optional bool  power_byvrid_mode = 11;               //power混动模式
         optional bool  climbing_mode = 12;                   //爬坡模式符号片
         optional bool  diagnostic_mode = 13;                 //诊断模式符号片
-
         optional bool  lamp_turn_left = 14;         	     //左转向
         optional bool  lamp_turn_right = 15;       	     //右转向
-
         optional bool  lamp_double_flash = 16;      	     //双闪开启
         optional bool  lamp_front_fog = 17;         	     //前雾灯
         optional bool  lamp_rear_fog = 18;         	     //后雾灯
@@ -28,37 +26,67 @@ message PicLampFrame    //小图片显示
         optional bool  lamp_head_light = 20;       	     //近光灯
         optional bool  lamp_reverse_gear = 21;                //倒车灯
         optional bool  lamp_position_light = 22;             //位置灯
-
         optional bool  lamp_gate1 = 23;            	     //前门开
         optional bool  lamp_gate2 = 24;                      //中门开
         optional bool  lamp_rear_door_open = 25;             //后舱门开指示
-
         optional bool  lamp_brake = 26;                      //刹车制动
         optional bool  lamp_parking_brake = 27;              //驻车制动
-
         optional bool  lamp_left_low_air_pressure = 28;      //左气压低报警
         optional bool  lamp_right_low_air_pressure = 29;     //右气压低报警
-
         optional bool  lamp_left_shoe_wear = 30;             //左前摩擦片(刹车蹄片)报警
         optional bool  lamp_right_shoe_wear = 31;            //右前摩擦片(刹车蹄片)报
-
-        optional bool  lamp_charge_confirm = 32;              //充电确认
+	optional bool  lamp_charge_confirm = 32;              //充电确认
         optional bool  lamp_battery_main_contact = 33;       //电池主接触器KT
-
-        optional bool  lamp_water_temp_high = 34;            //水温高报警
+	optional bool  lamp_water_temp_high = 34;            //水温高报警
         optional bool  lamp_water_level_low = 35;            //水位低指示
-
-        optional bool  lamp_low_service_wl = 36;             //轻微故障报警STOP
+	optional bool  lamp_low_service_wl = 36;             //轻微故障报警STOP
         optional bool  lamp_heavy_stop_wl = 37;              //重大故障报警STOP
         optional bool  lamp_serious_stop_wl = 38;            //严重故障报警STOP
-
         optional bool  lamp_oil_level_low = 39;              //油量低报警
         optional bool  lamp_oil_pressure_low = 40;           //机油压力低
         optional bool  lamp_engine_fault = 41;               //发动机故障
-
         optional bool  lamp_motor_out_of_service = 42;       //24V发电机未工作
         optional bool  lamp_moter_fire_igon = 43;            //发电机点火指示
         optional bool  lamp_after_treat = 44;                 //后处理故障
 	optional bool  lamp_warning_led = 45;			//危险报警
 
+
+	optional bool air_press1 = 46;				//气压1报警
+	optional bool air_press2 = 47;				//气压2报警
+	optional bool air_press3 = 48;				//气压3报警
+	optional bool air_press4 = 49;				//气压4报警
+	optional bool air_press5 = 50;				//气压5报警
+	optional bool power_doors_open = 51;			//电源门开启
+	optional bool power_battery_cut_off = 52;		//动力电池切断
+	optional bool seatbelt_not_fastened = 53;		//安全带未系
+	optional bool forward_gear = 54;			//前进挡
+	optional bool neutral_gear = 55;			//空挡
+	optional bool reverse_gear = 56;			//倒档
+	optional bool electronic_in_slope = 57;			//电子驻坡
+	optional bool ascd = 58;				//定速巡航开启
+	optional bool ready = 59;				//运行准备就绪
+	optional bool power_accumulators_charge_status = 60;	//动力蓄电池充电状态
+	optional bool cable_connect = 61;			//充电线连线
+	optional bool control_motor_overheating = 62;		//控制器及驱动电机过热
+	optional bool power_accumulators_fault = 63;		//动力蓄电池故障
+	optional bool driver_system_fault = 64;			//驱动系统故障指示
+	optional bool severity_insulation_fault = 65;		//严重绝缘故障报警
+	optional bool slight_insulation_fault = 66;		//轻微绝缘故障报警
+	optional bool motor_power_limitation = 67;		//电机功率受限指示
+	optional bool bms_alarm = 68;				//BMS报警
+	optional bool soc_low_aram = 69;			//SOC过低报警
+	optional bool safety_system_alarm = 70;			//安全系统(安全门)报警
+	optional bool left_doors_open_alarm = 71;		//左侧舱门开报警
+	optional bool right_doors_open_alarm = 72;		//右侧舱门开报警
+	optional bool barrier_free_march_reach = 73;		//无障碍踏步伸出报警
+	optional bool gate_charge_open = 74;			//充电门开报警
+	optional bool driver_seat_alarm = 75;			//司机座椅报警
+	optional bool ecas_system_fault_led = 76;		//ECAS系统故障指示灯
+	optional bool ecas_alarm_led = 77;			//ECAS报警指示灯
+	optional bool ecas_kneeling_status_led = 78;		//ESAS侧跪状态指示灯
+	optional bool ecas_special_height_led = 79;		//ECAS特殊高度指示灯
+	optional bool drop_off_doorbell = 80;			//下客门铃
+	optional bool wait = 81;				//运行等待
+	optional bool front_door_exigency_alarm = 82;		//前门应急控制器报警
+	optional bool middle_door_exigency_alarm = 83;		//中门应急控制器报警
 }
