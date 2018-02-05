@@ -7,11 +7,6 @@ message  DateTime    //日期
 	required uint32 date_time = 1;        // 系统时间
 }
 
-message AnimationFlash //开机动画
-{
-	required int32 auto_flash = 1;        // 开机动画通知
-}
-
 message MilesClearSettings //里程清零
 {
 	required bool trip_miles_clear = 1;   // 清零小计里程

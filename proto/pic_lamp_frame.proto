@@ -89,4 +89,5 @@ message PicLampFrame    //小图片显示
 	optional bool wait = 81;				//运行等待
 	optional bool front_door_exigency_alarm = 82;		//前门应急控制器报警
 	optional bool middle_door_exigency_alarm = 83;		//中门应急控制器报警
+	optional bool stop = 84;				//禁止运行
 }
