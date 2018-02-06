@@ -28,4 +28,6 @@ message BatteryManageSystemMenu //电池管理信息
 	optional int32	temp_stylet_amount = 21;		//可充电储能系统温度探针个数
 	optional int32	outlet_positive_temp = 22;		//充电插座直流电源正极温度，0 ℃
 	optional int32	outlet_negative_temp = 23;		//充电插座直流电源负极温度，0 ℃
+	optional int32	power_battery_type = 24;		//动力电池类型
+	optional int32	power_battery_recharge = 25;		//动力电池充电次数
 }

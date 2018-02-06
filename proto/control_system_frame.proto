@@ -35,7 +35,7 @@ message ControlSystemMenu //控制信息
 	optional int32 steering_assist_motor_temp = 27;	//转向助力电机温度，0 ℃
 	optional int32 air_compressor_motor_temp = 28;	//空压机电机温度，0 ℃
 	optional int32 air_compressor_control_temp = 29;//空压控制器温度，0 ℃
-	optional int32 steering_assist_control_temp = 30;//转向控制器温度，0 ℃
+	optional int32 steering_control_device_temp = 30;//转向控制器温度，0 ℃
 	optional float air_press3 = 31;			//气压3，0.00 Mpa
 	optional float air_press4 = 32;			//气压4，0.00 Mpa
 	optional float air_press5 = 33;			//气压5，0.00 Mpa
