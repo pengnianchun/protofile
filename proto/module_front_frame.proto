@@ -2,25 +2,44 @@ syntax = "proto2";
 
 package fyModuleFrontInfo; //前模块信息
 
-message ModuleFrontElectricFrame  //前模块电流
+message ModuleFrontElectricFrame  //前模块输出电流
 {
-        required float output_current_01 = 1;  //前模块引脚1
-        required float output_current_02 = 2;  //前模块引脚2
-        required float output_current_03 = 3;  //前模块引脚3
-        required float output_current_04 = 4;  //前模块引脚4
-        required float output_current_05 = 5;  //前模块引脚5
+        required float output_current_01 = 1;  //第1路输出
+        required float output_current_02 = 2;  //第2路输出
+        required float output_current_03 = 3;  //第3路输出
+        required float output_current_04 = 4;  //第4路输出
+        required float output_current_05 = 5;  //第5路输出
 	
-        required float output_current_06 = 6;  //前模块引脚6
-        required float output_current_07 = 7;  //前模块引脚7
-        required float output_current_08 = 8;  //前模块引脚8
-        required float output_current_09 = 9;  //前模块引脚9
-        required float output_current_10 = 10; //前模块引脚10
+        required float output_current_06 = 6;  //第6路输出
+        required float output_current_07 = 7;  //第7路输出
+        required float output_current_08 = 8;  //第8路输出
+        required float output_current_09 = 9;  //第9路输出
+        required float output_current_10 = 10; //第10路输出
 
-        required float output_current_11 = 11; //前模块引脚11
-        required float output_current_12 = 12; //前模块引脚12
-        required float output_current_13 = 13; //前模块引脚13
-        required float output_current_14 = 14; //前模块引脚14
-        required float output_current_15 = 15; //前模块引脚15
+        required float output_current_11 = 11; //第11路输出
+        required float output_current_12 = 12; //第12路输出
+        required float output_current_13 = 13; //第13路输出
+        required float output_current_14 = 14; //第14路输出
+        required float output_current_15 = 15; //第15路输出
+}
+
+message ModuleFrontFaultFrame  //前模块输出故障状态
+{
+	required int32 output_fault_01 = 1; //第1路输出状态
+	required int32 output_fault_02 = 2; //第2路输出状态
+	required int32 output_fault_03 = 3; //第3路输出状态
+	required int32 output_fault_04 = 4; //第4路输出状态
+	required int32 output_fault_05 = 5; //第5路输出状态
+	required int32 output_fault_06 = 6; //第6路输出状态
+	required int32 output_fault_07 = 7; //第7路输出状态
+	required int32 output_fault_08 = 8; //第8路输出状态
+	required int32 output_fault_09 = 9; //第9路输出状态
+	required int32 output_fault_10 = 10; //第10路输出状态
+	required int32 output_fault_11 = 11; //第11路输出状态
+	required int32 output_fault_12 = 12; //第12路输出状态
+	required int32 output_fault_13 = 13; //第13路输出状态
+	required int32 output_fault_14 = 14; //第14路输出状态
+	required int32 output_fault_15 = 15; //第15路输出状态
 }
 message ModuleFrontControlFrame  //前模块控制
 {
