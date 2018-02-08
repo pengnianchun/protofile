@@ -59,9 +59,9 @@ message ModuleMiddleControlFrame  //中模块输入控制
         required bool  switch_14 = 14;         //开关量输入14
         required bool  switch_15 = 15;         //开关量输入15
         required bool  switch_16 = 16;         //开关量输入16
-	required float analog_input_01 = 17;	//模拟量输入1
-	required float analog_input_02 = 18;	//模拟量输入2
-	required int32 Hz_input = 19;		//模块频率输入
-	required int32 speed_input = 20;	//模块车速输入
+	optional float analog_input_01 = 17;	//模拟量输入1
+	optional float analog_input_02 = 18;	//模拟量输入2
+	optional int32 Hz_input = 19;		//模块频率输入
+	optional int32 speed_input = 20;	//模块车速输入
 }
 
