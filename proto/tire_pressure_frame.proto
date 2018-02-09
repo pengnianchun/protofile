@@ -1,0 +1,20 @@
+syntax = "proto2";
+
+package fyTirePressInfo; //胎压监测系统
+
+message TirePressInfoFrame    //胎压监测系统信息
+{
+	required float front_left_tire_press = 1; //左前轮胎胎压 0.0 Mpa
+	required float fron_right_tire_press = 2;//右前轮胎胎压 0.0 Mpa
+	required float back_left_tire_press1 = 3; //左后轮胎胎压1 0.0 Mpa
+	required float back_right_tire_press1 = 4;//右后轮胎胎压1 0.0 Mpa
+	optional float back_left_tire_press2 = 5; //左后轮胎胎压2 0.0 Mpa
+	optional float back_right_tire_press2 = 6;//右后轮胎胎压2 0.0 Mpa
+
+	required int32 front_left_tire_temp = 7;//左前轮胎温度  0 ℃
+	required int32 front_right_tire_temp = 8;//左前轮胎温度  0 ℃
+	required int32 back_left_tire_temp1 = 9;//左后轮胎温度1 0 ℃
+	required int32 back_right_tire_temp1 = 10;//右后轮胎温度1 0 ℃
+	optional int32 back_left_tire_temp2 = 11;//左后轮胎温度2 0 ℃
+	optional int32 back_right_tire_temp2 = 12;//右后轮胎温度2 0 ℃	
+}
