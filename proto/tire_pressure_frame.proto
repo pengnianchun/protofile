@@ -1,8 +1,8 @@
 syntax = "proto2";
 
-package fyTirePressInfo; //后模块信息
+package fyTirePressInfo; //胎压监测系统
 
-message TirePressInfoFrame    //后模块输出电流
+message TirePressInfoFrame    //胎压监测系统信息
 {
 	required float front_left_tire_press = 1; //左前轮胎胎压 0.0 Mpa
 	required float fron_right_tire_press = 2;//右前轮胎胎压 0.0 Mpa
