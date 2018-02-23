@@ -32,10 +32,10 @@ message ShutDownSettings	//关机
 
 message CloseBuzzerSettings	//关闭蜂鸣器
 {
-	required int32 close_buzzer;		//手动关闭蜂鸣器
+	required int32 close_buzzer = 1;	//手动关闭蜂鸣器
 }
 
 message VideoSignalSettings	//视频信号
 {
-	required int32 video_signal_switch;	//视频信号切换
+	required int32 video_signal_switch = 1;	//视频信号切换
 }
