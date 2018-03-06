@@ -39,7 +39,9 @@ message YxMenuIdRequest //菜单信息
 	    MENU_TIRE_PRESSURE= 9;     	//09，胎压监测系统界面
 	    MENU_VARIED_SELECT = 10;	//10，杂项信息查询界面
 	    MENU_TIME_SET = 11;		//11，时间设置界面
-	    MENU_NO_MAX = 12;	           
+	    MENU_VIDEO_SWITCH = 12;	//12,视频信号切换
+	    MENU_NO_MAX = 13;	           
     	}   
-	optional int32 page_number = 2 [default = 0]; //请求页面号
+	optional int32 yx_page_number = 2 [default = 0]; //请求页面号
+	optional bool yx_check_request_menu = 3;	 //请求菜单信息是否成功
 }

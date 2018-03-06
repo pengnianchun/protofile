@@ -5,11 +5,13 @@ package fySystemSettingsInfo; //系统设置信息
 message  DateTime    //日期
 {
 	required uint32 date_time = 1;        // 系统时间
+	optional bool check_date_time = 2;	//设置时间是否成功
 }
 
 message MilesClearSettings //里程清零
 {
 	required bool trip_miles_clear = 1;   // 清零小计里程
+	optional bool check_miles_clear = 2;	//里程清零是否成功
 }
 
 message UpgradeSettings //升级
@@ -25,17 +27,10 @@ message UpgradeSettings //升级
 	    UPDATED_FAILED = 5;     // send to mcu, update fail, msg: fail reason, success as "udisk remove".
 	} 
 }
-message ShutDownSettings	//关机
-{
-        required int32 shut_down = 1;            //关机信号
-}
 
 message CloseBuzzerSettings	//关闭蜂鸣器
 {
-	required int32 close_buzzer = 1;	//手动关闭蜂鸣器
+	required bool close_buzzer = 1;	//手动关闭蜂鸣器
+	optional bool check_close_buzzer = 2; //蜂鸣器开关是否成功
 }
 
-message VideoSignalSettings	//视频信号
-{
-	required int32 video_signal_switch = 1;	//视频信号切换
-}

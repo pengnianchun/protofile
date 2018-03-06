@@ -49,3 +49,8 @@ message CustomFrame //扩展信息
 	optional int32	battery_low_temperature = 18;		//电池最低温度
 	optional int32	battery_pack_energy = 19;		//电池组当前电量
 }
+message mixedFrame //杂项信息查询
+{
+	optional int32 velocity_ratio = 1;			//速比
+	optional bool buzzer_status = 2;			//蜂鸣器状态 
+}
