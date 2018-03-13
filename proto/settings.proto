@@ -5,13 +5,21 @@ package fySystemSettingsInfo; //系统设置信息
 message  DateTime    //日期
 {
 	required uint32 date_time = 1;        // 系统时间
-	optional bool check_date_time = 2;	//设置时间是否成功
+}
+
+message DateTimeVerify	//确认设置日期成功
+{
+	required bool check_date_time = 1;	//状态返回
 }
 
 message MilesClearSettings //里程清零
 {
 	required bool trip_miles_clear = 1;   // 清零小计里程
-	optional bool check_miles_clear = 2;	//里程清零是否成功
+}
+
+message MilesClearVerify//确认里程清零成功
+{
+	required bool check_miles_clear = 1;	//状态返回
 }
 
 message UpgradeSettings //升级
@@ -31,6 +39,9 @@ message UpgradeSettings //升级
 message CloseBuzzerSettings	//关闭蜂鸣器
 {
 	required bool close_buzzer = 1;	//手动关闭蜂鸣器
-	optional bool check_close_buzzer = 2; //蜂鸣器开关是否成功
 }
 
+message CloseBuzzerVerify	//确认操作蜂鸣器成功
+{
+	required bool check_close_buzzer = 1; //状态返回
+}
