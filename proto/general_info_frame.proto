@@ -47,7 +47,7 @@ message CustomFrame //扩展信息
 	optional float  alone_battery_high_voltage = 16;    	//单体电池最高电压
 	optional int32  battery_high_temperature = 17;		//电池最高温度
 	optional int32	battery_low_temperature = 18;		//电池最低温度
-	optional int32	battery_pack_energy = 19;		//电池组当前电量
+	optional float	battery_pack_energy = 19;		//电池组当前电量
 }
 message mixedFrame //杂项信息查询
 {
