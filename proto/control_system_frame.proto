@@ -30,8 +30,8 @@ message ControlSystemMenu //控制信息
 	optional bool high_voltage_power_up = 22;	//高压上电状态
 	optional bool air_compressor_work = 23;		//空压机工作状态
 	optional bool booster_pump_work = 24;		//助力泵工作状态
-	optional int32 air_compressor_motor_speed = 25;	//空压机电机转速，0 rpm
-	optional int32 steering_assist_motor_speed = 26;//转向助力电机转速，0 rpm
+	optional float air_compressor_motor_speed = 25;	//空压机电机转速，0.0 rpm
+	optional float steering_assist_motor_speed = 26;//转向助力电机转速，0.0 rpm
 	optional int32 steering_assist_motor_temp = 27;	//转向助力电机温度，0 ℃
 	optional int32 air_compressor_motor_temp = 28;	//空压机电机温度，0 ℃
 	optional int32 air_compressor_control_temp = 29;//空压控制器温度，0 ℃

@@ -21,7 +21,7 @@ message BatteryManageSystemMenu //电池管理信息
 	optional int32	bms_life = 14;				//BMS的Life值
 	optional int32	battery_pack_highest_temp = 15;		//电池组最高温度，0 ℃
 	optional int32	battery_pack_min_temp = 16;		//电池组最低温度，0 ℃
-	optional float	battery_pack_energy = 17;		//电池组当前电量，0.0 kWh
+	optional float	battery_pack_elec = 17;			//电池组当前电量，0.0 kWh
 	optional int32	bms_control_status = 18;		//BMS管控状态
 	optional int32	bat_amount = 19;			//单体电池总数
 	optional int32	recharge_status = 20;			//充电状态
