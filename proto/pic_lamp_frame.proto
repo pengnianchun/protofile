@@ -34,7 +34,7 @@ message PicLampFrame    //小图片显示
         optional bool  lamp_left_low_air_pressure = 28;      //左气压低报警
         optional bool  lamp_right_low_air_pressure = 29;     //右气压低报警
         optional bool  lamp_left_shoe_wear = 30;             //左前摩擦片(刹车蹄片)报警
-        optional bool  lamp_right_shoe_wear = 31;            //右前摩擦片(刹车蹄片)报
+        optional bool  lamp_right_shoe_wear = 31;            //右前摩擦片(刹车蹄片)报警
 	optional bool  lamp_charge_confirm = 32;              //充电确认
         optional bool  lamp_battery_main_contact = 33;       //电池主接触器KT
 	optional bool  lamp_water_temp_high = 34;            //水温高报警
@@ -87,7 +87,19 @@ message PicLampFrame    //小图片显示
 	optional bool ecas_special_height_led = 79;		//ECAS特殊高度指示灯
 	optional bool drop_off_doorbell = 80;			//下客门铃
 	optional bool wait = 81;				//运行等待
-	optional bool front_door_exigency_alarm = 82;		//前门应急控制器报警
-	optional bool middle_door_exigency_alarm = 83;		//中门应急控制器报警
+	optional bool front_door_exigency_alarm = 82;		//前门应急控制器开报警
+	optional bool middle_door_exigency_alarm = 83;		//中门应急控制器开报警
 	optional bool stop = 84;				//禁止运行
+	optional bool lamp_left_back_wear = 85;             	//左前摩擦片(刹车蹄片)报警
+        optional bool lamp_right_back_wear = 86;            	//右前摩擦片(刹车蹄片)报警
+	optional bool lamp_mirror_heating = 87; 		//后视镜加热工作指示
+	optional bool lamp_defroster1 = 88;			//除霜器1档位工作指示
+	optional bool lamp_defroster2 = 89;			//除霜器2档位工作指示
+	optional bool lamp_low_speed_close = 90;		//车辆低速警示音关闭
+	optional bool lamp_main_switch = 91;			//灯光总开关
+	optional bool lamp_tire_pre_fault = 92;			//胎压异常报警
+	optional bool lamp_bat_higt_temp = 93;			//动力蓄电池高温
+	optional bool lamp_system_fault = 94;			//系统故障
+	optional bool lamp_bat_legend = 96;			//蓄驶里程指示器
+	optional bool lamp_rton = 97;				//定时充电信号
 }
