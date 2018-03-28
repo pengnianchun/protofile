@@ -90,8 +90,8 @@ message PicLampFrame    //小图片显示
 	optional bool front_door_exigency_alarm = 82;		//前门应急控制器开报警
 	optional bool middle_door_exigency_alarm = 83;		//中门应急控制器开报警
 	optional bool stop = 84;				//禁止运行
-	optional bool lamp_left_back_wear = 85;             	//左前摩擦片(刹车蹄片)报警
-        optional bool lamp_right_back_wear = 86;            	//右前摩擦片(刹车蹄片)报警
+	optional bool lamp_left_back_wear = 85;             	//左后摩擦片(刹车蹄片)报警
+    optional bool lamp_right_back_wear = 86;            	//右后摩擦片(刹车蹄片)报警
 	optional bool lamp_mirror_heating = 87; 		//后视镜加热工作指示
 	optional bool lamp_defroster1 = 88;			//除霜器1档位工作指示
 	optional bool lamp_defroster2 = 89;			//除霜器2档位工作指示
