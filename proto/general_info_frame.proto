@@ -24,7 +24,7 @@ message GeneralFrame //基本信息
 
 message ControlFrame //控制信息
 {
-	optional int32  control_signal = 1;		    //控制信号 1: igOn 2: 报警 3: igOff
+	optional int32  control_signal = 1;		    //控制信号 1:igOn  2:报警  0:igOff
 }
 message CustomFrame //扩展信息
 {

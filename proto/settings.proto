@@ -45,3 +45,13 @@ message CloseBuzzerVerify	//确认操作蜂鸣器成功
 {
 	required bool check_close_buzzer = 1; //状态返回
 }
+
+message IntensityCtrl	//亮度调节
+{
+	required uint32 intensity_ctrl = 1;	//设置屏幕亮度
+}
+
+message QuenchLCD //关闭屏幕
+{
+	required uint32 quench_lcd = 1;		//关闭显示屏幕
+}
