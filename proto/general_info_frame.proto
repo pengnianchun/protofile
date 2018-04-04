@@ -11,7 +11,7 @@ message KeyFrame //按键操作
 }
 message GeneralFrame //基本信息
 {
-	optional int32  battery = 1;                       //蓄电池电压
+	optional float  battery = 1;                        //蓄电池电压
 	optional uint32 odo = 2;                            //总里程
 	optional float  trip = 3;                           //小计里程
 	optional uint32 date_time = 4;        		   // 系统时间
