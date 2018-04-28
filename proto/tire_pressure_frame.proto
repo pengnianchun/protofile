@@ -21,12 +21,12 @@ message TirePressInfoFrame    //胎压监测系统信息
 
 message TirePress_index_num //胎压学习状态返回mcu -> imx 
 {
-	required int32 TirePress_index = 1; //轮胎顺序编号 0 - 5 
-	required int32 TirePress_status = 2;// 轮胎结果为三态 0学习失败1学习成功2取消学习
+	required int32 tirePressindex = 1; //轮胎顺序编号 0 - 5 
+	required int32 tirepressstatus = 2;// 轮胎结果为三态 0学习失败1学习成功2取消学习
 }
 
 message TirePresscontrl //胎压学习控制imx -> mcu
 {
-	required int32 TirePresscontrlindex = 1; //需要学习的轮胎编号	
-	required int32 TirePress_student_status = 2;//是否学习 1 学习 0 取消学习
+	required int32 tirepresscontrlindex = 1; //需要学习的轮胎编号	
+	required int32 tirePressstudentstatus = 2;//是否学习 1 学习 0 取消学习
 }
