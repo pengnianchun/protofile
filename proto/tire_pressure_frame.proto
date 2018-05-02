@@ -33,12 +33,12 @@ message TirePressInfoFrame    //胎压监测系统信息
 	optional int32 back_right_tire_air_out1 = 23;//右后轮胎漏气
 	optional int32 back_right_tire_air_out2 = 24;//右后轮胎漏气
 
-	optional int32 front_left_tire_sensor_bad = 25;//左前轮胎漏气
-	optional int32 front_right_tire_sensor_bad = 26;//右前轮胎漏气
-	optional int32 back_left_tire_sensor_bad1 = 27;//左后轮胎漏气
-	optional int32 back_left_tire_sensor_bad2 = 28;//左后轮胎漏气
-	optional int32 back_right_tire_sensor_bad1 = 29;//右后轮胎漏气
-	optional int32 back_right_tire_sensor_bad2 = 30;//右后轮胎漏气
+	optional int32 front_left_tire_sensor_bad = 25;//左前轮胎传感器故障
+	optional int32 front_right_tire_sensor_bad = 26;//右前轮胎传感器故障
+	optional int32 back_left_tire_sensor_bad1 = 27;//左后轮胎传感器故障
+	optional int32 back_left_tire_sensor_bad2 = 28;//左后轮胎传感器故障
+	optional int32 back_right_tire_sensor_bad1 = 29;//右后轮胎传感器故障
+	optional int32 back_right_tire_sensor_bad2 = 30;//右后轮胎传感器故障
 
 }
 
