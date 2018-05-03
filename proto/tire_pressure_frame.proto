@@ -59,7 +59,7 @@ message TirePressStatus //设置轮胎
 	required int32 tirep_set_index = 1;
 	//这个字段我使用了一个字节低压设置是00 01 02 03 04 05 对应６个轮胎低压设置
 	//高压字段使用80 81 82 83 84 85 对应６个轮胎的高压设置
-	required int32 tirep_set_value = 2;　//对应的胎压值最大是255 Bar  
+	required int32 tirep_set_value = 2;//对应的胎压值最大是255 Bar  
 }
 
 
