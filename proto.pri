@@ -45,8 +45,14 @@ protobuf_impl.variable_out = GENERATED_SOURCES
 QMAKE_EXTRA_COMPILERS += protobuf_impl
 
 unix:!macx{
-    system(bash $$PWD/proto.sh)
+    system($$PWD/proto.sh)
+
+    QMAKE_DISTCLEAN += $$PWD/protocode/*
+    QMAKE_DISTCLEAN += $$PWD/protoheader.h
 }
 win32 {
     system($$PWD/proto.bat)
+
+    QMAKE_DISTCLEAN += $$PWD\protocode\*
+    QMAKE_DISTCLEAN += $$PWD\protoheader.h
 }
