@@ -1,8 +1,8 @@
 项目： Aries<br/>
 说明： 存放项目协议文件，作为子模块供其他项目使用<br/>
 规则： 添加/删除/更新 proto 目录下文件<br/>
-       新增 proto 时， 需要更新 protoheader.h<br/>
-       通知其他项目更新子模块 [git submodule update --remote]<br/>
+       -新增 proto 时， 需要更新 protoheader.h<br/>
+       -通知其他项目更新子模块 [git submodule update --remote]<br/>
 重要： 目前已知 datacenter、CarFox、CarInfoTestTools 使用本模块<br/>
 用法：<br/>
 - 项目文件 <br/>
