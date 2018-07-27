@@ -18,11 +18,9 @@ PROTOS = $$PROTO_DIR/airctrl_system_frame.proto \
          $$PROTO_DIR/module_front_frame.proto \
          $$PROTO_DIR/module_middle_frame.proto \
          $$PROTO_DIR/moter_system_frame.proto \
-         $$PROTO_DIR/person.proto \
          $$PROTO_DIR/pic_lamp_frame.proto \
          $$PROTO_DIR/settings.proto \
          $$PROTO_DIR/tcu_system_frame.proto \
-         $$PROTO_DIR/test.proto \
          $$PROTO_DIR/tire_pressure_frame.proto \
          $$PROTO_DIR/warning_frame.proto \
 
